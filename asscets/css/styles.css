@@ -161,33 +161,47 @@
     border: 0.1rem solid var(--primary-color);
 
 }
-/*@media(max-width: 800px){
-    .intro-content, .grid{
-        grid-template-columns: 1fr;
+/* Media query para telas menores que 768px (por exemplo, tablets e dispositivos móveis) */
+@media only screen and (max-width: 768px) {
+    /* Estilo para o menu */
+    .menu {
+        position: fixed; /* Torna o menu fixo para melhorar a acessibilidade em dispositivos móveis */
+        top: 0;
+        left: -100%; /* Esconder o menu quando não estiver sendo usado */
+        width: 80%; /* Largura do menu em telas pequenas */
+        height: 100%; /* Altura do menu em telas pequenas */
+        background-color: #fff; /* Cor de fundo */
+        transition: left 0.3s ease; /* Adiciona uma transição suave para o efeito de abertura/fechamento */
     }
-    .gallery-img{
-        width:100% ;
-        max-width: 100%;
-        max-height: 100%;
+    .menu.open {
+        left: 0; /* Exibe o menu quando estiver aberto */
     }
-    .gallery-img img{
-        width: 100%;
+    .menu-content {
+        padding-top: 50px; /* Adiciona espaço acima do conteúdo do menu para não ser coberto pelo cabeçalho fixo */
     }
-    .grid-one-content{
-        display: block;
+
+    /* Estilo para o botão do menu */
+    .menu-button {
+        display: block; /* Exibe o botão do menu */
+    }
+
+    /* Estilo para as imagens na galeria */
+    .gallery-img {
+        width: 100%; /* Define a largura das imagens para ocupar toda a largura da tela */
+    }
+}/* Estilos para o ícone do menu */
+.menu-toggle {
+    display: none; /* Oculta o botão do menu por padrão */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos para o menu principal em telas pequenas */
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none; /* Oculta o menu principal por padrão em telas pequenas */
+        /* Outros estilos para o menu em telas pequenas */
     }
 }
-@media (max-width :800px) {
-    .menu{
-        bottom: 0;
-        text-align: center;
-    }
-    .menu-content .menu-content ul {
-        flex-direction: column;
-        height: 100vh;
-        
-    }
-    .menu-content{
-        justify-content: center;
-    }
-}*/
