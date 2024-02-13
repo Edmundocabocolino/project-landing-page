@@ -14,9 +14,10 @@
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
+  height: 100vh;
 }
 .menu h1{
-  font-size: 2.3rem;
+  font-size: 1rem;
   color: var(--primary-color);
 }
 .menu h1 a{
@@ -30,7 +31,7 @@
 .menu ul li a {
   display:block;
   padding: 2rem;
-  font-size: 1.8rem;
+  font-size: 1rem;
   color: var(--primary-color);
   position: relative;
 }
