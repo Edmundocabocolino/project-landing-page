@@ -14,7 +14,7 @@
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
-  height: 100vh;
+  max-width: 100%;
 }
 .menu h1{
   font-size: 1rem;
